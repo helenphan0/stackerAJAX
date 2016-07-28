@@ -32,6 +32,7 @@ var showQuestion = function(question) {
 };
 
 
+<<<<<<< HEAD
 // this function takes the tag object returned by the StackOverflow request
 // and returns new result to be appended to DOM
 var showAnswerer = function(tag_score) {
@@ -65,6 +66,8 @@ var showAnswerer = function(tag_score) {
 };
 
 
+=======
+>>>>>>> e1f91494b9ae5a39daee002f6f6c2c2370ec182a
 // this function takes the results object from StackOverflow
 // and returns the number of results and tags to be appended to DOM
 var showSearchResults = function(query, resultNum) {
@@ -114,6 +117,7 @@ var getUnanswered = function(tags) {
 	});
 };
 
+<<<<<<< HEAD
 var getInspired = function(tags) {
 	
 	// the parameters we need to pass in our request to StackOverflow's API
@@ -144,6 +148,8 @@ var getInspired = function(tags) {
 	});
 };
 
+=======
+>>>>>>> e1f91494b9ae5a39daee002f6f6c2c2370ec182a
 
 $(document).ready( function() {
 	$('.unanswered-getter').submit( function(e){
@@ -154,6 +160,7 @@ $(document).ready( function() {
 		var tags = $(this).find("input[name='tags']").val();
 		getUnanswered(tags);
 	});
+<<<<<<< HEAD
 	$('.inspiration-getter').submit( function(event){
 		event.preventDefault();
 		// zero out results if previous search has run
@@ -162,4 +169,6 @@ $(document).ready( function() {
 		var tags = $(this).find("input[name='answerers']").val();
 		getInspired(tags);
 	});
+=======
+>>>>>>> e1f91494b9ae5a39daee002f6f6c2c2370ec182a
 });
